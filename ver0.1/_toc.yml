@@ -1,0 +1,46 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+chapters:
+  - title: Getting Started with PyClm101
+    file: notebooks/setup_intro
+    sections:
+      - file: notebooks/setup_miniconda
+        title: Miniconda Installation
+      - file: notebooks/setup_packages
+        title: Python Package Installation
+      - file: notebooks/setup_virtualenv
+        title: Virtual Environment
+      - file: notebooks/setup_jupyter
+        title: Jupyter Notebook 
+
+  - title: File I/O for Climate Data
+    file: notebooks/file_io_intro
+    sections:
+      - file: notebooks/io_csv
+        title: Reading CSV Files
+      - file: notebooks/io_netcdf_intro
+        title: Reading NetCDF Files
+        sections:
+          - file: notebooks/io_netcdf_text
+            title: "NetCDF:  Method Overview"
+          - file: notebooks/io_netcdf_code
+            title: "NetCDF: Code Example"
+      - file: notebooks/io_grib
+        title: Reading GRIB Files
+      - file: notebooks/io_write
+        title: Writing Output Files
+
+  - title: Data Analysis
+    file: notebooks/analysis_intro
+
+  - title: Visualization
+    file: notebooks/vis_intro
+    sections:
+      - file: notebooks/vis_autoname
+        title: Auto-Naming Output Files
+
+
